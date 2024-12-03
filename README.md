@@ -1,75 +1,110 @@
-<header>
+AI Chatbot for Prescription and OTC Medicine Recommendations
+Overview
+This project is an AI-powered chatbot developed for Tata 1MG to address key user pain points such as OTC medicine confusion and prescription delays. The chatbot streamlines healthcare delivery, enhances user trust, and boosts engagement through intelligent, personalized interactions.
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Features
+Symptom-based OTC Recommendations: Provides accurate, fast medication suggestions.
+Medical History Collection: Simplifies submission via guided prompts.
+Real-time Consultation Updates: Improves prescription turnaround time.
+Impact
+Increased OTC medicine accuracy by 85%.
+Reduced prescription turnaround time by 30%.
+Boosted medical history completion rates by 40%.
+Tech Stack
+Backend: Python, Flask
+Frontend: HTML, CSS, JavaScript
+AI/ML Tools: Google Dialogflow
+Database: MongoDB
+Deployment: AWS
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/tata-1mg-chatbot.git  
+Navigate to the project directory:
+bash
+Copy code
+cd tata-1mg-chatbot  
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt  
+Run the application:
+bash
+Copy code
+python app.py  
+Usage
+Access the chatbot through the deployed URL.
+Enter symptoms or queries to receive tailored medicine recommendations.
+Provide medical history for consultation and receive real-time updates on prescription status.
+Roadmap
+Add multi-language support for broader accessibility.
+Implement advanced health insights and medication interaction alerts.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-# Introduction to GitHub
+License
+This project is licensed under the MIT License.
 
-_Get started using GitHub in less than an hour._
+Acknowledgments
+Special thanks to the Tata 1MG team for their support and feedback.
 
-</header>
+Feel free to adjust this template to better match your project specifics!
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
 
-## Step 1: Create a branch
 
-_Welcome to "Introduction to GitHub"! :wave:_
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+You said:
+What else folders should i add there
+ChatGPT said:
+ChatGPT
+To make your GitHub repository well-organized and professional, include the following folders and files based on best practices for web-based and AI/ML projects:
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+1. Folder Structure
+Here’s a suggested folder hierarchy:
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+graphql
+Copy code
+tata-1mg-chatbot/
+├── src/                # Main application source code
+│   ├── backend/        # Backend-related files (Flask, API code)
+│   ├── frontend/       # HTML, CSS, JS files
+│   └── chatbot/        # AI/ML model and Dialogflow configurations
+├── data/               # Dataset or mock data for testing
+├── tests/              # Unit tests and test cases
+├── docs/               # Documentation (e.g., user guides, API reference)
+├── configs/            # Configuration files (environment variables, settings)
+├── static/             # Static assets (images, logos, etc.)
+├── templates/          # HTML templates for rendering
+└── deployments/        # Scripts for deployment (Dockerfile, Kubernetes YAML)
+2. Essential Files
+Add these files at the root level of your repository:
 
-![profile-readme-example](/images/profile-readme-example.png)
+README.md
+Explain the project overview, installation steps, usage, and contribution guidelines.
 
-### :keyboard: Activity: Your first branch
+requirements.txt
+List all dependencies for the project.
 
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+makefile
+Copy code
+Flask==2.1.2  
+Google-Dialogflow==1.2.3  
+.gitignore
+Specify files and folders to exclude from version control (e.g., sensitive keys, virtual environments).
 
-   ![code-tab](/images/code-tab.png)
+bash
+Copy code
+__pycache__/  
+*.env  
+node_modules/  
+LICENSE
+Declare the project license (e.g., MIT, Apache 2.0).
 
-3. Click on the **main** branch drop-down.
+CONTRIBUTING.md
+Provide guidelines for contributors, such as how to fork, submit PRs, and report issues.
 
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
-
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+CHANGELOG.md
+Document major changes across versions.
